@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Oxanium:wght@500&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 11.4%,
+    rgb(17, 11, 123) 70.2%
+  );
+  background-size: contain;
+}
+
+.container {
+  padding: 42px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 700;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+  padding: 0 16px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 1440px) {
+    }
+  }
+  &__label {
+    font-family: "Oxanium", cursive;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 20px;
+    }
+  }
+  &__value {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Oxanium", cursive;
+    font-size: 4rem;
+    text-align: center;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 72px;
+      line-height: 56px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 7rem;
+      line-height: 56px;
+    }
+  }
+
+  &__separator {
+    color: white;
+    font-size: 32px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 42px;
+      padding-bottom: 46px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding-bottom: 46px;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 40px;
+  }
+
+  button {
+    background-image: linear-gradient(
+      to right,
+      #054f9d 0%,
+      #5935db 51%,
+      #082d54 100%
+    );
+    cursor: pointer;
+    margin: 8px;
+    padding: 12px 32px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-weight: bold;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    border-radius: 200px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-position: right center; /* change the direction of the change here */
+      text-decoration: none;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: 10px;
+      padding: 15px 45px;
+      font-size: 18px;
+    }
+  }
+}
